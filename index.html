@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сакура для любимой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="title">Сакура Комплиментов</h1>
+
+        <!-- Контейнер для дерева и фонариков -->
+        <div class="tree-container">
+            <!-- Фонарики с комплиментами -->
+            <div class="lantern lantern-1" onclick="showLove('Ты самая милая!')">Милая</div>
+            <div class="lantern lantern-2" onclick="showLove('Ты невероятно прекрасная!')">Прекрасная</div>
+            <div class="lantern lantern-3" onclick="showLove('Твоя нежность покоряет меня каждый день!')">Нежная</div>
+            <div class="lantern lantern-4" onclick="showLove('Ты самая умная и вдохновляющая!')">Умная</div>
+            <div class="lantern lantern-5" onclick="showLove('Ты — моя настоящая Муза!')">Моя Муза</div>
+            <div class="lantern lantern-6" onclick="showLove('Самая добрая и душевная!')">Добрая</div>
+        </div>
+
+        <!-- Всплывающее окошко для комплимента -->
+        <div id="modal" class="modal hidden" onclick="closeModal()">
+            <div class="modal-content">
+                <p id="modal-text"></p>
+                <span class="close-btn">✨ Нажми, чтобы закрыть ✨</span>
+            </div>
+        </div>
+
+        <footer class="footer">Для моей единственной и неповторимой ❤️</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
